@@ -6,7 +6,7 @@
 @section('content')
 <div class="content-page">
 
-    <h1>hahahaha</h1>
+    <h1>Hello world</h1>
 
 </div>
 @endsection
