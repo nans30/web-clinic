@@ -22331,3 +22331,13 @@ div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip] {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+
+.icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4008px;
+    height: 48px;
+    font-size: 1.25rem;
+}
