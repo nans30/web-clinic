@@ -143,10 +143,21 @@
                             <span class="menu-text">User</span>
                         </a>
                     </li>
+                    <li class="side-nav-item">
+                        <a href="{{route ('medicines.index')}}" target="" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-person"></i></span>
+                            <span class="menu-text">Obat    </span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a href="{{route ('services.index')}}" target="_blank" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-briefcase"></i></span>
+                            <span class="menu-text">Services</span>
+                        </a>
+                    </li>
 
                     <li class="side-nav-title" data-lang="apps-title">Apps</li>
-
-                    
 
                 </ul>
 
