@@ -18,8 +18,12 @@ Route::get('/doctors', function () {
     return view('doctors');
 })->name('doctors');
 
+Route::resource('doctor', DoctorController::class);
+
 Route::resource('services', ServiceController::class);
 Route::resource('user', UserController::class);
+
+Route::resource('medicines', MedicineController::class);
 
 // Route khusus untuk user yang sudah login
 
