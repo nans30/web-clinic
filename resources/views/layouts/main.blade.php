@@ -130,7 +130,26 @@
                         </a>
                     </li>
 
+                    <li class="side-nav-item">
+                        <a href="{{ route('doctors')}}" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-stethoscope"></i></span>
+                            <span class="menu-text">Doctors</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a href="{{route ('user.index')}}" target="_blank" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-person"></i></span>
+                            <span class="menu-text">User</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-title" data-lang="apps-title">Apps</li>
+
+                    
+
                 </ul>
+
             </div>
         </div>
         <!-- Sidenav Menu End -->
@@ -172,11 +191,11 @@
                         <i class="ti ti-menu-4 fs-22"></i>
                     </button>
 
-                    
+
                 </div> <!-- .d-flex-->
 
                 <div class="d-flex align-items-center gap-2">
-                    
+
                     <!-- Notification Dropdown -->
                     <div class="topbar-item">
                         <div class="dropdown">
