@@ -138,9 +138,15 @@
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="{{route ('user.index')}}" target="_blank" class="side-nav-link">
+                        <a href="{{route ('user.index')}}" target="" class="side-nav-link">
                             <span class="menu-icon"><i class="ti ti-person"></i></span>
                             <span class="menu-text">User</span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="{{route ('medicines.index')}}" target="" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-person"></i></span>
+                            <span class="menu-text">Obat    </span>
                         </a>
                     </li>
 

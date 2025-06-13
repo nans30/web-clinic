@@ -6,9 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Medicine extends Model
 {
-    protected $fillable = ['name', 'unit_id', 'category_id', 'price'];
+    protected $fillable = ['name', 'description', 'stock', 'price', 'category_id', 'unit_id', 'image']; 
 
-    public function unit()
+
+
+    public function unit()  
     {
         return $this->belongsTo(Unit::class);
     }
