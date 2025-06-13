@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -13,11 +14,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/doctors', function () {
-    return view('doctors');
-})->name('doctors');
-
 Route::resource('user', UserController::class);
+
+Route::resource('doctor', DoctorController::class);
+
 
 // Route khusus untuk user yang sudah login
 Route::middleware('auth')->group(function () {

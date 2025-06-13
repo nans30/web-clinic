@@ -10,11 +10,13 @@
             <div class="alert alert-success">{{ session('success') }}</div>
         @endif
 
-        <table class="table table-bordered">
-            <thead>
+        <table class="table table-bordered table-striped align-middle">
+            <thead class="table-dark">
                 <tr>
+                    <th>Foto</th>
                     <th>Nama</th>
                     <th>Email</th>
+                    <th>No HP</th>
                     <th>Role</th>
                     <th>Aksi</th>
                 </tr>
@@ -22,8 +24,16 @@
             <tbody>
                 @forelse ($users as $user)
                     <tr>
+                        <td>
+                            @if($user->photo)
+                                <img src="{{ asset('storage/' . $user->photo) }}" alt="Foto" width="50" height="50" class="rounded-circle">
+                            @else
+                                <span class="text-muted">-</span>
+                            @endif
+                        </td>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
+                        <td>{{ $user->phone_number ?? '-' }}</td>
                         <td>{{ $user->getRoleNames()->implode(', ') }}</td>
                         <td>
                             <a href="{{ route('user.edit', $user->id) }}" class="btn btn-sm btn-warning">Edit</a>
@@ -35,7 +45,7 @@
                         </td>
                     </tr>
                 @empty
-                    <tr><td colspan="4">Belum ada user</td></tr>
+                    <tr><td colspan="6" class="text-center">Belum ada user</td></tr>
                 @endforelse
             </tbody>
         </table>

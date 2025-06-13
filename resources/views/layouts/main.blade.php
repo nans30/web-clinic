@@ -131,15 +131,15 @@
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="{{ route('doctors')}}" class="side-nav-link">
+                        <a href="{{ route('doctor.index')}}" class="side-nav-link">
                             <span class="menu-icon"><i class="ti ti-stethoscope"></i></span>
                             <span class="menu-text">Doctors</span>
                         </a>
                     </li>
 
                     <li class="side-nav-item">
-                        <a href="{{route ('user.index')}}" target="_blank" class="side-nav-link">
-                            <span class="menu-icon"><i class="ti ti-person"></i></span>
+                        <a href="{{route ('user.index')}}" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-user"></i></span>
                             <span class="menu-text">User</span>
                         </a>
                     </li>
