@@ -150,9 +150,14 @@
                         </a>
                     </li>
 
-                    <li class="side-nav-title" data-lang="apps-title">Apps</li>
+                    <li class="side-nav-item">
+                        <a href="{{route ('services.index')}}" target="_blank" class="side-nav-link">
+                            <span class="menu-icon"><i class="ti ti-briefcase"></i></span>
+                            <span class="menu-text">Services</span>
+                        </a>
+                    </li>
 
-                    
+                    <li class="side-nav-title" data-lang="apps-title">Apps</li>
 
                 </ul>
 

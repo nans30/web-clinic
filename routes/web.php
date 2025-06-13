@@ -1,6 +1,8 @@
 <?php
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MedicineController;
 
@@ -13,15 +15,9 @@ Route::get('/dashboard', function () {
 })->name('dashboard'); // tanpa middleware auth
 Route::get('/doctors', function () {
     return view('doctors');
-})->name('doctors'); // tanpa middleware auth
+})->name('doctors');
 
-
-
-
-Route::get('/profilee', function () {
-    return view('profilee');
-})->name('profilee');
-
+Route::resource('services', ServiceController::class);
 Route::resource('user', UserController::class);
 Route::resource('medicines', MedicineController::class);
 
